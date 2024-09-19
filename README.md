@@ -1,6 +1,7 @@
  **S3 to Lambda Text Conversion Automation**
 This repository demonstrates a serverless solution using AWS Lambda triggered by Amazon S3 to convert the content of text files from lowercase to uppercase. When a file is uploaded to a specified S3 folder, the Lambda function automatically processes the file, converts the text, and stores it in a different folder within the same S3 bucket.
 
+
 **1. What is AWS Lambda?**
 AWS Lambda is a serverless compute service that runs code in response to events and automatically manages the underlying compute resources. It’s a cost-effective way to execute code only when needed, without provisioning or managing servers.
 
@@ -9,6 +10,7 @@ AWS Lambda is a serverless compute service that runs code in response to events 
 --Scalability: Automatically scales with workload size.
 --Cost-Efficient: Pay only for the compute time your code consumes.
 --Event-Driven: Ideal for event-based architectures like file uploads, database updates, and HTTP requests.
+
 
 **2. Project Overview**
 This project utilizes AWS Lambda and S3 to:
@@ -21,10 +23,12 @@ This project utilizes AWS Lambda and S3 to:
 -The Lambda function reads the file, processes it, and converts the text to uppercase.
 -The converted file is saved to the uppercase-folder/ in the same S3 bucket.
 
+
 **3. Architecture Flowchart**
    This flowchart shows how the S3 upload triggers AWS Lambda to convert text files:
 
        flowchart.png
+
 
 **4. Implementation Steps**  
 **4.1 AWS Resources Utilized:**
@@ -35,6 +39,7 @@ This project utilizes AWS Lambda and S3 to:
 **4.2 Lambda Function Code:**
 -The Lambda function is written in Python and is triggered by S3 events (i.e., file uploads). 
 -It reads the uploaded file, converts the content to uppercase, and stores the new file in a different folder.
+
 
 **5. How to Set Up This Project**
 Step 1: Create an S3 Bucket

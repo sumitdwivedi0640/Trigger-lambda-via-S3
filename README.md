@@ -59,6 +59,7 @@ Step 3: Assign IAM Permissions
 
 
 **6. How to Use This Project**
+
 -Upload a Text File:
 -Upload a text file with lowercase text to the lowercase-folder/ in the S3 bucket.
 -Lambda Trigger:
@@ -68,6 +69,7 @@ Step 3: Assign IAM Permissions
 
 
 **7. Conclusion**
+
 This project demonstrates how to leverage AWS Lambda and S3 for serverless automation, enabling real-time file processing. The solution is scalable, cost-efficient, and requires minimal maintenance, making it ideal for event-driven architectures.
 
 
